@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:background="@mipmap/ic_profile_ram" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="310dp"
+            android:paddingStart="10dp"
+            android:text=" please click a below done button.let's move a my application home page.  "
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

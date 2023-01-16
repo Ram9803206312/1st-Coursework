@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HobbiesFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="List of my hobbies"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/ic_sports"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/sports_hobby"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="UnusedAttribute" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/ic_codding_bck"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:paddingStart="10dp"
+                android:text="@string/coding_hobby"
+                android:textSize="20sp"
+                tools:targetApi="o"
+                tools:ignore="RtlSymmetry" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/ic_music_hobby"
+                android:orientation="vertical"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/music_hobby"
+                android:textSize="20sp"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/ic_photograph"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/photography_as_a_hobby_is_an_opportunity_to_document_every_part_of_your_journey_no_matter_how_small_it_may_be_my_fourth_hobbies_is_photography"
+                android:textSize="20sp"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

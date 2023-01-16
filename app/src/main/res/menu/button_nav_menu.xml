@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home"/>
+    <item android:title="profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profile"/>
+
+    <item android:title="Hobbies"
+        android:icon="@drawable/ic_baseline_sports_football_24"
+        android:id="@+id/hobby"/>
+    <item android:title="Contact"
+        android:icon="@drawable/ic_baseline_phone_24"
+        android:id="@+id/phone"/>
+    <item android:title="Skill"
+        android:icon="@drawable/ic_baseline_downhill_skiing_24"
+        android:id="@+id/skill"/>
+
+</menu>

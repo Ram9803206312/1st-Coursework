@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:background="@mipmap/ic_second" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginTop="300dp"
+            android:paddingStart="10dp"
+            android:text=" My app contains different screens like Home, Profile, Skills, Hobbies and Contacts.
+                          My application will be developed using Android Studio IDE and Java programming language  "
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

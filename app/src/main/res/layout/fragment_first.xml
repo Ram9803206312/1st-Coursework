@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="411dp"
+            android:layout_height="283dp"
+            android:background="@mipmap/ic_first" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_marginTop="310dp"
+            android:paddingStart="10dp"
+            android:text=" In my application I have shown my basic and educational information along with other valuable information. I have also put my short bio data in this application. "
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

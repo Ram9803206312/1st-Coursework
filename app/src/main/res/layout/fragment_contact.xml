@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ContactFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:textSize="48sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="170dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="512dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvContact"
+            app:layout_constraintVertical_bias="0.174"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="160dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="512dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+
+            app:layout_constraintStart_toEndOf="@+id/first_name"
+            app:layout_constraintTop_toBottomOf="@+id/tvContact"
+            app:layout_constraintVertical_bias="0.176"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/Phone_num"
+            android:layout_width="340dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/mobile_number"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_name"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/tvToEmail"
+            android:layout_width="340dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="TO E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawablePadding="15dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Phone_num" />
+
+
+        <EditText
+            android:id="@+id/tvSubject"
+            android:layout_width="340dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:hint="Subject"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Phone_num" />
+
+        <EditText
+            android:id="@+id/tvMessage"
+            android:layout_width="340dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:paddingStart="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvToEmail"
+            tools:ignore="MissingConstraints,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSent"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/sent_email"
+            android:textSize="15sp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+        <TextView
+            android:id="@+id/tvContact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Contact information"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSent"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/toPhone"
+            android:layout_width="80dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="116dp"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvContact_info"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:paddingTop="15dp"
+            android:layout_marginTop="10dp"
+            android:text="9803206312"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toEndOf="@+id/toPhone"
+            app:layout_constraintTop_toBottomOf="@+id/tvContact_info"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/To_email"
+            android:layout_width="47dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toPhone" />
+
+        <EditText
+            android:id="@+id/tvEmailAddress_info"
+            android:layout_width="226dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Pariyaram056@gmail .com"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/To_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toEndOf="@+id/To_email"
+            app:layout_constraintTop_toTopOf="@+id/To_email"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
